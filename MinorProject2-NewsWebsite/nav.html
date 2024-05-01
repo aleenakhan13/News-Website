@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         footer {
+            background: -webkit-linear-gradient(right,#003366,#004080,#0059b3,#0073e6);
+            
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position:relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Copyright Text Styles */
+        .copyright {
+            font-size: 14px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="Screenshot 2024-03-05 104802.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    
+
+                  <li class="hover-link nav-item" id="Madhya Pradesh" onclick="onNavItemClick('Madhya Pradesh')">Madhya Pradesh</li> 
+                    <li class="hover-link nav-item" id="Uttar Pradesh" onclick="onNavItemClick('Uttar Pradesh')">Uttar Pradesh</li> 
+                    <li class="hover-link nav-item" id="Bihar" onclick="onNavItemClick('Bihar')">Bihar</li> 
+                    <li class="hover-link nav-item" id="Delh" onclick="onNavItemClick('Delhi')">Delhi</li> 
+                    <li class="hover-link nav-item" id="Himachal Pradesh" onclick="onNavItemClick('Himachal Pradesh')">Himachal Pradesh</li> 
+                    <li class="hover-link nav-item" id="Haryana" onclick="onNavItemClick('Haryana')">Haryana</li> 
+         
+
+             </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            <ul>
+               <a href="index.html"><li class="hover-link nav-item" id="Goback">Go Back</li></a> 
+            </ul>
+                
+            </div>
+
+            
+
+        </div>
+    </nav>
+
+    
+
+ 
+
+
+
+
+
+
+
+
+    
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+        </div>
+
+
+
+    </template>
+
+
+
+
+    <!-- <FRAMESET cols="20%>
+        <FRAMESET rows="100">
+            <FRAME src="contents_of_frame1.html">
+           
+        </FRAMESET>
+        <FRAME src="contents_of_frame3.html">
+        <NOFRAMES>
+            <P>This frameset document contains:
+            <UL>
+               <LI><A href="contents_of_frame1.html">Some neat contents</A>
+               <LI><IMG src="contents_of_frame2.gif" alt="A neat image">
+               <LI><A href="contents_of_frame3.html">Some other neat contents</A>
+            </UL>
+        </NOFRAMES>
+      </FRAMESET> -->
+
+
+
+
+    
+    <footer>
+        <div class="copyright">
+            &copy; 2024 A-Z News Website. All Rights Reserved.
+            <ul>
+                <li>
+                    <a href="contact.html" > <li class="hover-link nav-item">Contact Us</li> </a>
+                 <!---  <a href="signup.html" > <li class="hover-link nav-item">Login/Sign-Up</li> </a>  --> 
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="/script.js">
+
+    </script>
+</body>
+</html>
